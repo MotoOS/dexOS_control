@@ -16,3 +16,8 @@ endif
 ifneq ($(DexOS),true)
 include vendor/sound/config.mk
 endif
+
+ifneq ($(DexOS),true)
+include dexOS/user/config.mk
+endif
+
